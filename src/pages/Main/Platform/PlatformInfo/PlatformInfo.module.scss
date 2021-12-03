@@ -1,0 +1,26 @@
+.wrapper {
+    :global .ant-modal-header {
+        background: #FFF23F;
+        border-bottom: none
+    }
+}
+
+.text {
+    margin: 0 -23px;
+    height: 40px;
+    padding: 8px 23px;
+    background: #F5F5F5;
+}
+
+.title {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.block {
+    margin-bottom: 20px;
+}
+
+.chart {
+    margin: 20px 0 0;
+}

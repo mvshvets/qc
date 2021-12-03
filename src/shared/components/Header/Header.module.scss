@@ -1,0 +1,31 @@
+.wrapper {
+    height: 305px;
+    background: no-repeat url(../../img/header.png);
+    background-size: 100%;
+}
+
+.line {
+    height: 40px;
+    background: #FFF23F;
+}
+
+.title {
+    position: relative;
+    top: -15px;
+    width: 320px;
+    padding: 10px 20px;
+    background: #000;
+    color: #FFF;
+    text-align: right;
+    font-weight: 600;
+}
+
+.subtitle {
+    position: relative;
+    top: -15px;
+    padding: 10px 20px;
+    width: 410px;
+    background: #FFF23F;
+    font-weight: 600;
+    text-align: right;
+}
