@@ -8,8 +8,8 @@ export const Main = React.memo(() => {
     return (
         <PageContent>
             <div className={styles.platforms}>
-            {CONFIG.map(el => (
-                <Platform {...el}/>
+            {CONFIG.map((el, i) => (
+                <Platform {...el} key={i}/>
             ))}
                 </div>
         </PageContent>

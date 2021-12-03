@@ -1,8 +1,4 @@
 export const options = {
-    responsive: true,
-    legend: {
-        display: false
-    },
     scales: {
       y: {
         max: 100,
@@ -16,6 +12,7 @@ export const data = {
     labels,
     datasets: [
         {
+            label: 'Качество',
             data: labels.map(() => Math.floor(Math.random() * 100)),
             borderColor: '#5F307799',
             backgroundColor: '#5F307799',

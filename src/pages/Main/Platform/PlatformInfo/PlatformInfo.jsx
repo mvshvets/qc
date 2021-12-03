@@ -3,26 +3,8 @@ import styles from './PlatformInfo.module.scss'
 import {Modal} from 'antd'
 import {TransportTypesNames} from '../../../../shared/consts'
 import {getText} from './PlatformInfo.utils'
-import {
-    Chart as ChartJS,
-    CategoryScale,
-    LinearScale,
-    PointElement,
-    LineElement,
-    Tooltip,
-    Filler
-} from 'chart.js'
 import {Line} from 'react-chartjs-2'
 import {data, options} from './PlatformInfo.consts'
-
-ChartJS.register(
-    CategoryScale,
-    LinearScale,
-    PointElement,
-    LineElement,
-    Tooltip,
-    Filler
-)
 
 export const PlatformInfo = React.memo(({
                                             platformNumber,

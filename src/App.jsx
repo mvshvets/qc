@@ -1,18 +1,35 @@
-import {Main} from './pages'
-import {Chart, ArcElement} from 'chart.js'
+import {
+    Chart,
+    CategoryScale,
+    LinearScale,
+    PointElement,
+    LineElement,
+    Tooltip, Filler, BarElement, Legend
+} from 'chart.js'
 import {Footer, Header} from './shared/components'
 import React from 'react'
+import {Routing} from './routing/Routing'
+import {BrowserRouter} from 'react-router-dom'
 
-Chart.register(ArcElement)
+Chart.register(
+    CategoryScale,
+    LinearScale,
+    PointElement,
+    LineElement,
+    Tooltip,
+    Filler,
+    BarElement,
+    Legend,
+)
 
 export const App = React.memo(() => {
     return (
-        <>
+        <BrowserRouter>
             <Header/>
 
-            <Main/>
+            <Routing/>
 
             <Footer/>
-        </>
+        </BrowserRouter>
     )
 })
